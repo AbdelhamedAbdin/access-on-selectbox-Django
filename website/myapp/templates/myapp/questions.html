@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form method="get">
+        {% csrf_token %}
+        <div class="question">
+            <h2>{{ questions.question }}</h2>
+            <p>{{ forms.answer }}</p>
+        </div>
+        <input type="submit" value="Next">
+    </form>
+</body>
+</html>
